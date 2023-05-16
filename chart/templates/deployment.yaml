@@ -83,7 +83,7 @@ spec:
                   key: password
             {{- end }}
             - name: VPN_CONFIG_FILE
-              value: openvpn-config.ovpn
+              value: openvpn-configuration.ovpn
           volumeMounts:
             - mountPath: /data/vpn
               name: configs

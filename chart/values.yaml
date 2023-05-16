@@ -103,7 +103,7 @@ vpnConfig:
   # -- OpenVPN config files
   files:
     {}
-  # openvpn-config.ovpn: |-
+  # openvpn-configuration.ovpn: |-
   #     config....
   # credentials.txt: |-
   #     username
