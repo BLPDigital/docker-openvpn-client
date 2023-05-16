@@ -82,10 +82,8 @@ spec:
                   name: {{ include "openvpn-client.authSecretName" . }}
                   key: password
             {{- end }}
-            {{- with .Values.configFiles.openVPNConfig }}
             - name: VPN_CONFIG_FILE
-              value: {{ . }}
-            {{- end }}
+              value: openvpn-config.ovpn
           volumeMounts:
             - mountPath: /data/vpn
               name: configs
